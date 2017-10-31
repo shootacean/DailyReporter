@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DailyReporter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="525">
     <Grid>
-        
+        <DatePicker x:Name="ReportDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="399,10,0,0" Width="111"/>
+        <Button Content="Output" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="421,529,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Your name" VerticalAlignment="Top" Width="120" Margin="10,10,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,-77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="AM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,47,0,0"/>
+        <Label Content="PM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,118,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="AM works summary" VerticalAlignment="Top" Width="393" Margin="44,51,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="PM works summary" VerticalAlignment="Top" Width="393" Margin="44,122,0,0"/>
+        <Label Content="Works Detail&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,202,0,0" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Height="189" TextWrapping="Wrap" Text="Today's works" VerticalAlignment="Top" Width="393" Margin="44,233,0,0" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Works time" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,447,0,0" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="start time" VerticalAlignment="Top" Width="76" Margin="44,478,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="rest time" VerticalAlignment="Top" Width="76" Margin="143,478,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="end time" VerticalAlignment="Top" Width="76" Margin="242,478,0,0"/>
+
     </Grid>
 </Window>

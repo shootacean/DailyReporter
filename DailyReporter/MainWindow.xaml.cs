@@ -23,6 +23,14 @@ namespace DailyReporter
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new { X = 10, y = 20 };
+            this.ReportDate.SelectedDate = DateTime.Today;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

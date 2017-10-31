@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyReporter", "DailyReporter\DailyReporter.csproj", "{78B67102-5F3D-4070-80B5-5081F04526DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDailyReporter", "TestDailyReporter\TestDailyReporter.csproj", "{120131A5-13C3-4FD6-87BF-AC4C955683B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DairyReporter_winform", "DairyReporter_winform\DairyReporter_winform.csproj", "{70D4B482-0132-41BB-B6A6-D0BAA19CA9F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{78B67102-5F3D-4070-80B5-5081F04526DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B67102-5F3D-4070-80B5-5081F04526DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B67102-5F3D-4070-80B5-5081F04526DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120131A5-13C3-4FD6-87BF-AC4C955683B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120131A5-13C3-4FD6-87BF-AC4C955683B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120131A5-13C3-4FD6-87BF-AC4C955683B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120131A5-13C3-4FD6-87BF-AC4C955683B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D4B482-0132-41BB-B6A6-D0BAA19CA9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D4B482-0132-41BB-B6A6-D0BAA19CA9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D4B482-0132-41BB-B6A6-D0BAA19CA9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D4B482-0132-41BB-B6A6-D0BAA19CA9F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
