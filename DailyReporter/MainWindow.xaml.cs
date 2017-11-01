@@ -24,13 +24,9 @@ namespace DailyReporter
         {
             InitializeComponent();
 
-            this.DataContext = new { X = 10, y = 20 };
+            // init
             this.ReportDate.SelectedDate = DateTime.Today;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

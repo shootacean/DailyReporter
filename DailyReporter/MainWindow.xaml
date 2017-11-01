@@ -5,22 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DailyReporter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="525">
+        Title="MainWindow" Height="800" Width="644">
     <Grid>
-        <DatePicker x:Name="ReportDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="399,10,0,0" Width="111"/>
-        <Button Content="Output" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="421,529,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Your name" VerticalAlignment="Top" Width="120" Margin="10,10,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="388,-77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Label Content="AM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,47,0,0"/>
-        <Label Content="PM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,118,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="AM works summary" VerticalAlignment="Top" Width="393" Margin="44,51,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="PM works summary" VerticalAlignment="Top" Width="393" Margin="44,122,0,0"/>
-        <Label Content="Works Detail&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,202,0,0" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="189" TextWrapping="Wrap" Text="Today's works" VerticalAlignment="Top" Width="393" Margin="44,233,0,0" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Works time" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,447,0,0" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="start time" VerticalAlignment="Top" Width="76" Margin="44,478,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="rest time" VerticalAlignment="Top" Width="76" Margin="143,478,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="end time" VerticalAlignment="Top" Width="76" Margin="242,478,0,0"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF178068" Offset="1"/>
+                <GradientStop Color="#FFA5F5E6"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
+        <DatePicker x:Name="ReportDate" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="494,10,20,0" Width="122" FontSize="14"/>
+        <Button Content="Output" VerticalAlignment="Bottom" Width="94" Margin="522,718,0,20" Height="32" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Your name" VerticalAlignment="Top" Width="130" Margin="10,10,0,0" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,-77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="AM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,47,0,0" FontSize="14"/>
+        <Label Content="PM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,162,0,0" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="89" TextWrapping="Wrap" Text="AM works summary" VerticalAlignment="Top" Width="572" Margin="44,51,0,0" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="94" TextWrapping="Wrap" Text="PM works summary" VerticalAlignment="Top" Width="571" Margin="45,166,0,0" FontSize="14"/>
+        <Label Content="Works Detail&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,399,0,0" Height="26" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="189" TextWrapping="Wrap" Text="Today's works" VerticalAlignment="Top" Width="572" Margin="44,430,0,0" FontSize="14"/>
+
+        <GroupBox Header="Works time" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="605" Margin="11,639,0,0" FontSize="14">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF276C66" Offset="1"/>
+                    <GradientStop Color="#FF97D1B4"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <GroupBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.BorderBrush>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                <TextBox Height="23" TextWrapping="Wrap" Text="start time" VerticalAlignment="Center" Width="100" Margin="20,0" HorizontalAlignment="Center"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="rest time" VerticalAlignment="Top" Width="100" Margin="0,0,20,0"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="end time" VerticalAlignment="Top" Width="100" Margin="0,0,20,0"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="over time" VerticalAlignment="Top" Width="100" Margin="0,0,20,0"/>
+
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Use skills" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="604" Margin="12,298,0,0" FontSize="14">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF12877C" Offset="1"/>
+                    <GradientStop Color="#FFD4DCD8"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <GroupBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.BorderBrush>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                <TextBox Height="23" TextWrapping="Wrap" Text="lang" VerticalAlignment="Center" Width="130" Margin="20,0" HorizontalAlignment="Center"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="database" VerticalAlignment="Top" Width="130" Margin="0,0,20,0"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="other" VerticalAlignment="Top" Width="130" Margin="0,0,20,0"/>
+
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
